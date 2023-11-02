@@ -62,3 +62,8 @@ Import trace for requested module:
 error Command failed with exit code 1.
 info Visit https://yarnpkg.com/en/docs/cli/run for documentation about this command.
 ```
+
+Additional context:
+
+- This project uses Next.js's "app router"
+- Therefore, it does not use the `getStaticProps` or `getServerSideProps` functions, as the `app` component uses SSR, and therefore imports the `@dropbox/sign` in the server context by default
